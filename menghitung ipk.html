@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MENGHITUNG IPK</title>
+  </head>
+  <body>
+    <div class="head">
+        <h1>Semester 1</h1>
+        </div>
+            <div class="nama">
+            <p><b>
+                Nama  : Dzahwa Laely Putri Ramdani <br>
+                Nim   : 20210121003 <br>
+                Prodi : Sistem Informasi 1/2 <br>
+            </p></b>
+        </div>
+        <div class="data">
+        <div class="matkul">
+            <h3>Mata Kuliah</h3>
+            <hr>
+            <p>General English</p>
+            <p>Sistem dan Teknologi Informasi</p>
+            <p>Algoritma dan Pemrograman</p>
+            <p>Pancasila dan Kewarganegaraan</p>
+            <p>Matematika Bisnis</p>
+            <p>Manajemen dan Organiasi</p>
+            <p>Pembangunan Karakter & Etika Profesi</p>
+            <hr>
+        </div>
+        </div>
+        <div class="col col-1 text-center">
+            <h3>UTS</h3>
+            <hr>
+            <script>
+                var uts = [85, 85, 80, 80, 85, 89, 90]
+                for ( a = 0; a < uts.length; a++){
+                    document.writeln("<p>" + uts[a] + "<p>");
+                }
+            </script>
+            <hr>
+        </div>
+        <div class="col col-1 text-center">
+            <h3>UAS</h3>
+            <hr>
+            <script>
+                var uas = [100, 85, 85, 70, 90, 87, 85]
+                for ( a = 0; a < uas.length; a++){
+                    document.writeln("<p>" + uas[a] + "<p>");
+                }
+            </script>
+            <hr>
+        </div>
+        <div class="col col-1 text-center">
+            <h3>Hadir</h3>
+            <hr>
+            <script>
+                var hadir = [100, 100, 100, 95, 90, 90, 100]
+                for ( a = 0; a < hadir.length; a++){
+                    document.writeln("<p>" + hadir[a] + "%<p>");
+                }
+            </script>
+            <hr>
+        </div>
+        <div class="col col-1 text-center">
+            <h3>Tugas</h3>
+            <hr>
+            <script>
+                var tugas = [95, 80, 85, 88, 100, 85, 85]
+                for (let a = 0; a < tugas.length; a++){
+                    document.writeln("<p>" + tugas[a] + "<p>");
+                }
+            </script>
+            <hr>
+        </div>
+        <div class="col col-2 text-center">
+            <h4 style="background-color:rgb(12, 176, 182)">Nilai Akhir</h4>
+            <hr>
+            <script>
+                var nilaiing = uts[0] * 0.3 + uas[0] * 0.4 + hadir[0] * 0.2 + tugas[0] * 0.1;
+                document.writeln("<p>" + nilaiing + "</p>");
+
+                var nilaisti = uts[1] * 0.3 + uas[1] * 0.4 + hadir[1] * 0.2 + tugas[1] * 0.1;
+                document.writeln("<p>" + nilaisti + "</p>");
+
+                var nilaialgo = uts[2] * 0.3 + uas[2] * 0.4 + hadir[2] * 0.2 + tugas[2] * 0.1;
+                document.writeln("<p>" + nilaialgo + "</p>");
+
+                var nilaipkn = uts[3] * 0.3 + uas[3] * 0.4 + hadir[3] * 0.2 + tugas[3] * 0.1;
+                document.writeln("<p>" + nilaipkn + "</p>");
+
+                var nilaimatebis = uts[4] * 0.3 + uas[4] * 0.4 + hadir[4] * 0.2 + tugas[4] * 0.1;
+                document.writeln("<p>" + nilaimatebis + "</p>");
+
+                var nilaimanajemen = uts[5] * 0.3 + uas[5] * 0.4 + hadir[5] * 0.2 + tugas[5] * 0.1;
+                document.writeln("<p>" + nilaimanajemen + "</p>");
+
+                var nilaikarakter = uts[6] * 0.3 + uas[6] * 0.4 + hadir[6] * 0.2 + tugas[6] * 0.1;
+                document.writeln("<p>" + nilaikarakter + "</p>");
+            </script>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-7"></div>
+        <div class="col">
+            <hr>
+            <script>
+                document.writeln("<b>IPK </b><br>");
+                document.writeln("<b>Grade </b><br>");
+            </script>
+        </div>
+        <div class="col col-1 text-center">
+            <hr>
+            = <br> =
+        </div>
+        <div class="col">
+            <hr>
+            <script>
+                var IPK = (nilaiing + nilaisti + nilaialgo + nilaipkn + nilaimatebis + nilaimanajemen + nilaikarakter) / 175;
+                    document.writeln(IPK.toFixed(2) + "<br>");
+
+                    if (IPK >= 3.51 && IPK <= 4.00) {
+                        document.writeln("A");
+                    } else if (IPK >= 3.00 && IPK < 3.50) {
+                        document.writeln("B");
+                    } else if (IPK >= 2.76 && IPK < 3.00) {
+                        document.writeln("C");
+                    } else {
+                        document.writeln("D");
+                    }
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
